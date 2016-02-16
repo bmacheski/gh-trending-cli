@@ -1,0 +1,26 @@
+{
+  "name": "gh-trending-cli",
+  "version": "1.0.0",
+  "description": "GitHub Trending CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmacheski/gh-trending-cli.git"
+  },
+  "author": "Brian Macheski <bwm0007@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmacheski/gh-trending-cli/issues"
+  },
+  "homepage": "https://github.com/bmacheski/gh-trending-cli#readme",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "elegant-spinner": "^1.0.1",
+    "log-update": "^1.0.2",
+    "node-gh-trending": "^1.0.0",
+    "yargs": "^3.32.0"
+  }
+}
