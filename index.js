@@ -13,9 +13,9 @@ const argv  = yargs.argv
 
 if (args.length > 0) {
   let arg = args.toString().toLowerCase();
-  if (arg == 'repos' || arg === 'repositories') {
+  if (arg === 'repos' || arg === 'repositories') {
    repos();
-  } else if (arg == 'devs' || arg === 'developers') {
+  } else if (arg === 'devs' || arg === 'developers') {
     devs();
   } else {
     console.error('Not a valid argument.');
