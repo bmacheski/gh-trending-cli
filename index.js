@@ -2,14 +2,13 @@
 
 'use strict';
 
-const yargs  = require('yargs')
-  , repos    = require('./lib/repos')
-  , devs     = require('./lib/devs')
-  ;
+const yargs = require('yargs')
+    , repos = require('./lib/repos')
+    , devs  = require('./lib/devs')
 
-const argv  = yargs.argv
-  , args    = argv._
-  ;
+const argv = yargs.argv
+    , args = argv._
+    ;
 
 if (args.length > 0) {
   let arg = args.toString().toLowerCase();
