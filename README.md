@@ -3,7 +3,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 ```
-## Usage
+Usage
   $ gh-trending [command] [options]
 Commands
   repos                Get todays trending repositories
