@@ -17,11 +17,11 @@ if (args.length > 0) {
   let time = argv.time
 
   if (lang && arg === 'repos' || arg === 'repositories') {
-    time ? repos.getReposByLang(lang, time) : repos.getReposByLang(lang)
+    repos.getReposByLang(lang, time)
   } else if (!lang && arg === 'repos' || arg === 'repositories') {
-    time ? repos.getRepos(time) : repos.getRepos()
+    repos.getRepos(time)
   } else if (arg === 'devs' || arg === 'developers') {
-    time ? devs(time) : devs()
+    devs(time)
   } else {
     console.error('Not a valid argument.')
     process.exit(1)
