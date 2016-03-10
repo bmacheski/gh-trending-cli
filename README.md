@@ -5,13 +5,15 @@
 ```
 Usage
   $ gh-trending [command] [options]
+
 Commands
   repos                Get todays trending repositories
   devs                 Get todays trending developers
 
 Options
   --lang [language]    Get todays trending repositories in a particular language
-  --time [time]        Get 'weekly' or 'montly' trending repos -- default is  'daily'
+  --time [time]        Get 'weekly' or 'montly' trending repos -- the default is 'daily'
+
 Examples
   $ gh-trending devs --time monthly
   $ gh-trending repos
