@@ -15,9 +15,9 @@ if (args.length > 0) {
   let arg = args.toString().toLowerCase()
   let lang = argv.lang
 
-  if (arg === 'repos' || arg === 'repositories' && lang) {
+  if (lang && arg === 'repos' || arg === 'repositories') {
     repos.getReposByLang(lang)
-  } else if (arg === 'repos' || arg === 'repositories' && !lang) {
+  } else if (!lang && arg === 'repos' || arg === 'repositories') {
     repos.getRepos()
   } else if (arg === 'devs' || arg === 'developers') {
     devs()
