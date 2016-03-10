@@ -4,7 +4,7 @@
 
 const yargs = require('yargs')
 const repos = require('./lib/repos')
-const devs = require('./lib/devs')
+const devs = require('./lib/devs').getDevs
 const help = require('./lib/help')
 
 const argv = yargs.argv
@@ -14,13 +14,14 @@ const helpArg = argv.help
 if (args.length > 0) {
   let arg = args.toString().toLowerCase()
   let lang = argv.lang
+  let time = argv.time
 
   if (lang && arg === 'repos' || arg === 'repositories') {
-    repos.getReposByLang(lang)
+    time ? repos.getReposByLang(lang, time) : repos.getReposByLang(lang)
   } else if (!lang && arg === 'repos' || arg === 'repositories') {
-    repos.getRepos()
+    time ? repos.getRepos(time) : repos.getRepos()
   } else if (arg === 'devs' || arg === 'developers') {
-    devs()
+    time ? devs(time) : devs()
   } else {
     console.error('Not a valid argument.')
     process.exit(1)
