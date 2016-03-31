@@ -3,31 +3,36 @@
 'use strict'
 
 const yargs = require('yargs')
+
 const repos = require('./lib/repos')
-const devs = require('./lib/devs').getDevs
+const devs = require('./lib/devs')
 const help = require('./lib/help')
 
 const argv = yargs.argv
 const args = argv._
 const helpArg = argv.help
 
+function handleError () {
+  console.error('Not a valid command. Type --help to view available commands.')
+  process.exit(1)
+}
+
 if (args.length > 0) {
   let arg = args.toString().toLowerCase()
-  let lang = argv.lang
-  let time = argv.time
+  let lang = yargs.argv.lang
+  let time = yargs.argv.time
 
   if (lang && arg === 'repos' || arg === 'repositories') {
     repos.getReposByLang(lang, time)
   } else if (!lang && arg === 'repos' || arg === 'repositories') {
     repos.getRepos(time)
   } else if (arg === 'devs' || arg === 'developers') {
-    devs(time)
+    devs.getDevs(time)
   } else {
-    console.error('Not a valid argument.')
-    process.exit(1)
+    handleError()
   }
 } else if (helpArg) {
   help.showHelp()
 } else {
-  console.error('Not a valid command. Type --help to view available commands.')
+  handleError()
 }
