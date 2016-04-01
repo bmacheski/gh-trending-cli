@@ -4,7 +4,7 @@
   "description": "GitHub Trending CLI",
   "main": "index.js",
   "scripts": {
-    "test": "standard || true"
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,5 @@
     "ora": "^0.2.1",
     "yargs": "^3.32.0"
   },
-  "devDependencies": {
-    "standard": "^6.0.7"
-  }
+  "devDependencies": {}
 }
