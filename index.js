@@ -3,9 +3,9 @@
 'use strict'
 
 const yargs = require('yargs')
-  , repos   = require('./lib/repos')
-  , devs    = require('./lib/devs')
-  , help    = require('./lib/help')
+    , repos = require('./lib/repos')
+    , devs  = require('./lib/devs')
+    , help  = require('./lib/help')
 
 const args = yargs.argv._
 
