@@ -22,7 +22,6 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "elegant-spinner": "^1.0.1",
-    "log-update": "^1.0.2",
     "node-gh-trending": "^1.0.4",
     "ora": "^0.2.1",
     "yargs": "^3.32.0"
