@@ -14,7 +14,7 @@ Commands
 
 Options
   --lang [language]    Get todays trending repositories in a particular language
-  --time [time]        Get 'weekly' or 'montly' trending repos -- the default is 'daily'
+  --time [time]        Get 'weekly' or 'monthly' trending repos -- the default is 'daily'
 
 Examples
   $ gh-trending devs --time monthly
