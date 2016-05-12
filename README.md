@@ -2,6 +2,11 @@
 
 ![screen shot 2016-04-03 at 12 27 01 pm](https://cloud.githubusercontent.com/assets/7670539/14233785/8ef60fc0-f997-11e5-9200-1f397a30a612.png)
 
+## Install
+
+```
+$ npm install -g gh-trending-cli
+```
 
 ## Usage
 
