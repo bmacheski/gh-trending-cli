@@ -1,6 +1,6 @@
 {
   "name": "gh-trending-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GitHub Trending CLI",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/bmacheski/gh-trending-cli#readme",
   "dependencies": {
     "chalk": "^1.1.1",
-    "node-gh-trending": "^1.0.4",
+    "node-gh-trending": "^1.0.5",
     "ora": "^0.2.1",
     "yargs": "^3.32.0"
   },

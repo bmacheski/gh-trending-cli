@@ -4,8 +4,8 @@
 
 const yargs = require('yargs')
     , repos = require('./lib/repos')
-    , devs  = require('./lib/devs')
-    , help  = require('./lib/help')
+    , devs = require('./lib/devs')
+    , help = require('./lib/help')
 
 const args = yargs.argv._
 
@@ -15,7 +15,7 @@ function handleError () {
 }
 
 if (args.length) {
-  let arg  = args.toString().toLowerCase()
+  let arg = args.toString().toLowerCase()
     , lang = yargs.argv.lang
     , time = yargs.argv.time
 
